@@ -1,0 +1,25 @@
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px; /* Adjust as needed */
+  }
+  
+  .logo {
+    margin: 0 20px; /* Adjust spacing as needed */
+  }
+  
+  .tab {
+    color: gray;
+    border: none;
+    background: transparent;
+    font-weight: normal;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .tabActive {
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid black; /* Adds a border to indicate the active tab */
+  }
