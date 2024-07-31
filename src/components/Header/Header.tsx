@@ -14,7 +14,6 @@ export function Header({ onChange }: HeaderProps) {
   
   return (
     <div className={styles.headerContainer}>
-      <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
       <Image
         h={50}
         w="auto"
