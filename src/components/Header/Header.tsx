@@ -1,16 +1,10 @@
-import { Tabs, Image, Burger } from '@mantine/core';
+import { Image} from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { useRef } from 'react';
 import logo from '../../assets/fdslogo.png';
 import styles from './Header.module.css'; // Ensure this file exists
 
-// Define the type for the props
-interface HeaderProps {
-    onChange: (value: string | null) => void;
-  }
-
-export function Header({ onChange }: HeaderProps) {
-  const [opened, { toggle }] = useDisclosure();
+export function Header() {
   
   return (
     <div className={styles.headerContainer}>
@@ -21,17 +15,11 @@ export function Header({ onChange }: HeaderProps) {
         src={logo}
         className={styles.logo}
       />
-      <Tabs onChange={onChange} classNames={{ 
-        tab: styles.tab,
-      }}>
-        <Tabs.List>
-          <Tabs.Tab value="home">Home</Tabs.Tab>
-          <Tabs.Tab value="products">Our Products</Tabs.Tab>
-          <Tabs.Tab value="services">Services</Tabs.Tab>
-          <Tabs.Tab value="why">Why Us</Tabs.Tab>
-          <Tabs.Tab value="contact">Contact</Tabs.Tab>
-        </Tabs.List>
-      </Tabs>
+      <nav className={styles.nav}>
+        <a href="/" className={styles.navLink}>Home</a>
+        <a href="/products" className={styles.navLink}>Our Products</a>
+        <a href="/contact" className={styles.navLink}>Contact</a>
+      </nav>
     </div>
   );
 }

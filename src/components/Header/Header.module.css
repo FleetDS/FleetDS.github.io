@@ -1,25 +1,37 @@
 .headerContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px; /* Adjust as needed */
-  }
-  
-  .logo {
-    margin: 0 20px; /* Adjust spacing as needed */
-  }
-  
-  .tab {
-    color: gray;
-    border: none;
-    background: transparent;
-    font-weight: normal;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .tabActive {
-    color: black;
-    font-weight: bold;
-    border-bottom: 2px solid black; /* Adds a border to indicate the active tab */
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px; /* Adjust as needed */
+}
+
+.logo {
+  margin: 0 20px; /* Adjust spacing as needed */
+}
+
+.tab {
+  color: gray;
+  border: none;
+  background: transparent;
+  font-weight: normal;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem; /* Space between links */
+  margin-right: 2rem;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #000; /* Adjust as needed */
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.navLink:hover {
+  color: #007bff; /* Adjust hover color as needed */
+  text-decoration: underline;
+}
