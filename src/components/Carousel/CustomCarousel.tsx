@@ -3,6 +3,8 @@ import { useMediaQuery } from '@mantine/hooks';
 import { Button, Paper, Title, useMantineTheme, Text } from '@mantine/core';
 import classes from './CustomCarousel.module.css';
 import banner1 from '../../assets/banner12to1.jpg';
+import { useRef } from 'react';
+import Autoplay from 'embla-carousel-autoplay';
 
 const data = [
   {
@@ -50,12 +52,7 @@ interface CardProps {
 
 function Card({ image, title, category }: CardProps) {
   return (
-    <Paper
-      shadow="md"
-      p="xl"
-      style={{ backgroundImage: `url(${image})` }}
-      className={classes.card}
-    >
+    <Paper shadow="md" p="xl" style={{ backgroundImage: `url(${image})` }} className={classes.card}>
       <div>
         <Title order={3} className={classes.title}>
           {title}
@@ -74,6 +71,8 @@ export function CustomCarousel() {
     </Carousel.Slide>
   ));
 
+  const autoplay = useRef(Autoplay({ delay: 3000 }));
+
   return (
     <Carousel
       slideSize="100%"
@@ -82,6 +81,10 @@ export function CustomCarousel() {
       loop
       withIndicators
       controlSize={40}
+      plugins={[autoplay.current]}
+      onMouseEnter={autoplay.current.stop}
+      onMouseLeave={autoplay.current.reset}
+      classNames={classes}
     >
       {slides}
     </Carousel>

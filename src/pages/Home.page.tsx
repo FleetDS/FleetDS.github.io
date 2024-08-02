@@ -7,6 +7,7 @@ import styles from './HomePage.module.css';
 import { Header } from '@/components/Header/Header';
 import { useRef } from 'react';
 import { CustomCarousel } from '@/components/Carousel/CustomCarousel';
+import { Services } from '@/components/Services/Services';
 
 interface SectionRefs {
   [key: string]: React.RefObject<HTMLDivElement>;
@@ -29,6 +30,7 @@ export function HomePage() {
         <div>
           <div ref={sectionRefs.home} className={styles.section}>
             <CustomCarousel />
+            <Services/>
           </div>
           <div ref={sectionRefs.products} className={styles.section}>
             Content for products

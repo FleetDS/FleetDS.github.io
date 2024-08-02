@@ -1,0 +1,53 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #D9d9d9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 20rem;
+    width: 20rem;
+    margin: 15px;
+  }
+  
+  .image {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+  
+  .title {
+    font-weight: 700;
+    color: #333333;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    height: 3.5rem;
+  }
+  
+  .description {
+    color: #666666;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  .services {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .control {
+    &[data-inactive] {
+      opacity: 0;
+      cursor: default;
+    }
+  }

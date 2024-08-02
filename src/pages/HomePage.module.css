@@ -8,5 +8,5 @@
   .section {
     margin-bottom: 600px;
     flex: 1;
-    position: relative;
+    justify-content: center;
   }
