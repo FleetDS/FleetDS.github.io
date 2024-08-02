@@ -23,10 +23,10 @@ export function ContactPage() {
             Contact Us
           </Title>
           <Grid gutter="lg">
-            <Grid.Col span={{ base: 8, xs: 12, md: 8, lg: 8 }}>
+            <Grid.Col span={{ base: 12, xs: 12, md: 8, lg: 8 }}>
               <ContactForm />
             </Grid.Col>
-            <Grid.Col span={{ base: 4, xs: 12, md: 4, lg: 4 }}>
+            <Grid.Col span={{ base: 12, xs: 12, sm: 12, md: 4, lg: 4 }}>
               <Paper shadow="xs" radius="md" className={styles.paper}>
                 <Title order={3} className={styles.subheader}>Contact Information</Title>
                 <Text size="lg" className={styles.text}>
