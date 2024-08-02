@@ -4,22 +4,22 @@
 .container {
   width: 90%;
   max-width: 75rem;
-  min-width: 40rem; 
-  margin: 0 auto; 
-  padding: 1.25rem; 
+  min-width: 40rem;
+  margin: 0 auto;
+  padding: 1.25rem;
 }
 
 .header {
-  margin-bottom: 1.25rem; 
-  text-align: center; 
-  color: #333; 
+  margin-bottom: 1.25rem;
+  text-align: center;
+  color: #333;
   font-family: 'Poppins', sans-serif;
 }
 
 .subheader {
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
   color: #2c3e50;
-  font-family: 'Poppins', sans-serif; 
+  font-family: 'Poppins', sans-serif;
 }
 
 .paper {
@@ -45,4 +45,10 @@
   .paper {
     width: 100%;
   }
+}
+
+.divider {
+  height: 1px;
+  background-color: #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }

@@ -3,6 +3,7 @@ import { useMantineTheme } from '@mantine/core';
 import { Header } from '../components/Header/Header';
 import { ContactForm } from '../components/ContactForm/ContactForm';
 import styles from './ContactPage.module.css';
+import Footer from '@/components/Footer/Footer';
 
 export function ContactPage() {
   const theme = useMantineTheme();
@@ -28,7 +29,9 @@ export function ContactPage() {
             </Grid.Col>
             <Grid.Col span={{ base: 12, xs: 12, sm: 12, md: 4, lg: 4 }}>
               <Paper shadow="xs" radius="md" className={styles.paper}>
-                <Title order={3} className={styles.subheader}>Contact Information</Title>
+                <Title order={3} className={styles.subheader}>
+                  Contact Information
+                </Title>
                 <Text size="lg" className={styles.text}>
                   <strong>Email:</strong> {contactInfo.email}
                 </Text>
@@ -43,6 +46,10 @@ export function ContactPage() {
           </Grid>
         </div>
       </AppShell.Main>
+      <AppShell.Section>
+        <div className={styles.divider}></div>
+        <Footer />
+      </AppShell.Section>
     </AppShell>
   );
 }

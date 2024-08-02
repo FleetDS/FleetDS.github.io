@@ -2,6 +2,7 @@ import React from 'react';
 import { Title, Paper, Text, Container, Grid, AppShell } from '@mantine/core';
 import styles from './ProductPage.module.css';
 import { Header } from '@/components/Header/Header';
+import Footer from '@/components/Footer/Footer';
 
 const products = [
   {
@@ -48,6 +49,10 @@ export function ProductPage() {
       </Grid>
     </Container>
     </AppShell.Main>
+    <AppShell.Section>
+        <div className={styles.divider}></div>
+        <Footer/>
+      </AppShell.Section>
     </AppShell>
   );
 }
