@@ -1,31 +1,26 @@
-import { Burger, Image} from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import { useRef, useState } from 'react';
+import { Burger, Image, Anchor } from '@mantine/core';
+import { useState } from 'react';
 import logo from '../../assets/fdslogo.png';
-import styles from './Header.module.css'; // Ensure this file exists
+import styles from './Header.module.css';
 
 export function Header() {
-  const [opened, setOpened] = useState(true);
+  const [opened, setOpened] = useState(false);
 
   return (
     <div className={styles.headerContainer}>
-      <Image
-        h={50}
-        w="auto"
-        radius="md"
-        src={logo}
-        className={styles.logo}
-      />
-      <Burger
-        opened={opened}
-        onClick={() => setOpened((o) => !o)}
-        className={styles.burger}
-      />
-      <nav className={styles.nav} style={{ display: opened ? 'flex' : 'none' }}>
-        <a href="/" className={styles.navLink}>Home</a>
-        <a href="#/products" className={styles.navLink}>Our Products</a>
-        <a href="#/contact" className={styles.navLink}>Contact</a>
-      </nav>
+      <Image h={50} w="auto" radius="md" src={logo} className={styles.logo} />
+      <Burger opened={opened} onClick={() => setOpened((o) => !o)} className={styles.burger} />
+      <div className={`${styles.nav} ${opened ? styles.navVisible : styles.navHidden}`}>
+        <Anchor href="/" className={styles.navLink} underline="never" fw={500} fz="lg">
+          Home
+        </Anchor>
+        <Anchor href="#/products" className={styles.navLink} underline="never" fw={500} fz="lg">
+          Our Products
+        </Anchor>
+        <Anchor href="#/contact" className={styles.navLink} underline="never" fw={500} fz="lg">
+          Contact
+        </Anchor>
+      </div>
     </div>
   );
 }
