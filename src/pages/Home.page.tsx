@@ -1,6 +1,6 @@
 import { Welcome } from '../components/Welcome/Welcome';
 import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
-import { AppShell, Burger, Image } from '@mantine/core';
+import { AppShell, Burger, Image, Text } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import logo from '../assets/fdslogo.png';
 import styles from './HomePage.module.css';
@@ -30,6 +30,7 @@ export function HomePage() {
         <div>
           <div ref={sectionRefs.home} className={styles.section}>
             <CustomCarousel />
+            <Text className={styles.header} fw={500}>Services</Text>
             <Services/>
           </div>
           <div ref={sectionRefs.products} className={styles.section}>

@@ -82,6 +82,7 @@ export function Services() {
     <div className={styles.container}>
       <div className={styles.services}>
         <Carousel
+          slideGap="lg"
           slideSize="25%"
           align="center"
           slidesToScroll={slidesToScroll}
