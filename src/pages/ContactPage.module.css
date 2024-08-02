@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 .container {
-  width: 70%;
+  width: 90%;
   max-width: 75rem;
   min-width: 40rem; 
   margin: 0 auto; 
@@ -37,6 +37,12 @@
 
 @media (max-width: 48rem) {
   .container {
-    width: 90%;
+    width: 100%;
+    min-width: 0;
+    padding: 0.5rem;
+  }
+
+  .paper {
+    width: 100%;
   }
 }
