@@ -11,6 +11,7 @@ import { Services } from '@/components/Services/Services';
 import Footer from '@/components/Footer/Footer';
 import useScrollToTop from '@/hooks/useScrolltoTop';
 import { useScrollHide } from '@/hooks/useScrollHide';
+import WhyUs from '@/components/WhyUs/WhyUs';
 
 interface SectionRefs {
   [key: string]: React.RefObject<HTMLDivElement>;
@@ -46,6 +47,12 @@ export function HomePage() {
               Services
             </Text>
             <Services />
+          </div>
+          <div ref={sectionRefs.home} className={styles.section}>
+            <Text className={styles.header} fw={500}>
+              Why Us?
+            </Text>
+            <WhyUs />
           </div>
         </div>
       </AppShell.Main>
