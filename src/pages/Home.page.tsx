@@ -26,22 +26,24 @@ export function HomePage() {
   return (
     <AppShell header={{ height: 70 }}>
       <AppShell.Header>
-        <Header/>
+        <Header />
       </AppShell.Header>
 
       <AppShell.Main>
         <div id="top">
           <div ref={sectionRefs.home} className={styles.section}>
             <CustomCarousel />
-            <Text className={styles.header} fw={500}>Services</Text>
-            <Services/>
+            <Text className={styles.header} fw={500}>
+              Services
+            </Text>
+            <Services />
           </div>
         </div>
       </AppShell.Main>
 
       <AppShell.Section>
         <div className={styles.divider}></div>
-        <Footer/>
+        <Footer />
       </AppShell.Section>
     </AppShell>
   );
