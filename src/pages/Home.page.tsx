@@ -22,10 +22,10 @@ export function HomePage() {
   const showHeader = useScrollHide();
   const sectionRefs: SectionRefs = {
     home: useRef<HTMLDivElement>(null),
-    products: useRef<HTMLDivElement>(null),
-    contact: useRef<HTMLDivElement>(null),
+    service: useRef<HTMLDivElement>(null),
+    whyus: useRef<HTMLDivElement>(null),
   };
-
+  
   return (
     <AppShell
       header={{ height: 70, collapsed: !showHeader }}
@@ -40,15 +40,15 @@ export function HomePage() {
       </AppShell.Header>
 
       <AppShell.Main>
-        <div id="top">
-          <div ref={sectionRefs.home} className={styles.section}>
+        <div ref={sectionRefs.home}>
+          <div id="service" ref={sectionRefs.service} className={styles.section}>
             <CustomCarousel />
             <Text className={styles.header} fw={500}>
               Services
             </Text>
             <Services />
           </div>
-          <div ref={sectionRefs.home} className={styles.section}>
+          <div id="whyus" ref={sectionRefs.whyus} className={styles.section}>
             <Text className={styles.header} fw={500}>
               Why Us?
             </Text>
