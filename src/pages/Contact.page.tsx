@@ -5,6 +5,7 @@ import { ContactForm } from '../components/ContactForm/ContactForm';
 import styles from './ContactPage.module.css';
 import Footer from '@/components/Footer/Footer';
 import useScrollToTop from '@/hooks/useScrolltoTop';
+import { useScrollHide } from '@/hooks/useScrollHide';
 
 export function ContactPage() {
   useScrollToTop();

@@ -10,6 +10,7 @@ import { CustomCarousel } from '@/components/Carousel/CustomCarousel';
 import { Services } from '@/components/Services/Services';
 import Footer from '@/components/Footer/Footer';
 import useScrollToTop from '@/hooks/useScrolltoTop';
+import { useScrollHide } from '@/hooks/useScrollHide';
 
 interface SectionRefs {
   [key: string]: React.RefObject<HTMLDivElement>;
@@ -17,6 +18,7 @@ interface SectionRefs {
 
 export function HomePage() {
   useScrollToTop();
+  const showHeader = useScrollHide();
   const sectionRefs: SectionRefs = {
     home: useRef<HTMLDivElement>(null),
     products: useRef<HTMLDivElement>(null),
@@ -24,7 +26,14 @@ export function HomePage() {
   };
 
   return (
-    <AppShell header={{ height: 70 }}>
+    <AppShell
+      header={{ height: 70, collapsed: !showHeader }}
+      styles={(theme) => ({
+        main: {
+          paddingTop: 70, // Adjust for header height
+        },
+      })}
+    >
       <AppShell.Header>
         <Header />
       </AppShell.Header>

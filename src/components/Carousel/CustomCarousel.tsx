@@ -2,9 +2,10 @@ import { Carousel } from '@mantine/carousel';
 import { useMediaQuery } from '@mantine/hooks';
 import { Button, Paper, Title, useMantineTheme, Text } from '@mantine/core';
 import classes from './CustomCarousel.module.css';
-import banner1 from '../../assets/banner12to1.jpg';
 import { useRef } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
+
+import banner1 from '../../assets/banner12to1.jpg';
 
 const data = [
   {
@@ -71,7 +72,7 @@ export function CustomCarousel() {
     </Carousel.Slide>
   ));
 
-  const autoplay = useRef(Autoplay({ delay: 3000 }));
+  const autoplay = useRef(Autoplay({ delay: 8000 }));
 
   return (
     <Carousel

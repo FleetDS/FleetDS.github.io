@@ -35,6 +35,7 @@ const Footer: React.FC = () => {
               <Anchor
                 href="https://www.google.com/maps/place/1650+S+Amphlett+Blvd+UNIT+108,+San+Mateo,+CA+94402/@37.5594662,-122.3034163,16z/data=!3m1!4b1!4m6!3m5!1s0x808f9e8ccb3974e3:0xe4ff185b4355d5a1!8m2!3d37.5594662!4d-122.3034163!16s%2Fg%2F11n09cfznh?entry=ttu"
                 className={styles.contact}
+                target="_blank"
               >
                 1650 S. Amphlett Blvd., Suite 108, San Mateo, California 94402
               </Anchor>
