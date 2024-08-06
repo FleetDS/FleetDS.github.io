@@ -3,6 +3,7 @@ import { Title, Paper, Text, Container, Grid, AppShell } from '@mantine/core';
 import styles from './ProductPage.module.css';
 import { Header } from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
+import useScrollToTop from '@/hooks/useScrolltoTop';
 
 const products = [
   {
@@ -24,34 +25,35 @@ const products = [
 ];
 
 export function ProductPage() {
+  useScrollToTop();
   return (
     <AppShell header={{ height: 70 }}>
       <AppShell.Header>
-        <Header/>
+        <Header />
       </AppShell.Header>
 
       <AppShell.Main>
-    <Container>
-      <Title order={1} className={styles.header}>
-        Products
-      </Title>
-      <Grid>
-        {products.map((product, index) => (
-          <Grid.Col key={index} span={3}>
-            <Paper shadow="sm" p="md" className={styles.productCard}>
-              <img src={product.image} alt={`Product ${index + 1}`} className={styles.image} />
-              <Text mt="md" className={styles.description}>
-                {product.description}
-              </Text>
-            </Paper>
-          </Grid.Col>
-        ))}
-      </Grid>
-    </Container>
-    </AppShell.Main>
-    <AppShell.Section>
+        <Container id="top">
+          <Title order={1} className={styles.header}>
+            Products
+          </Title>
+          <Grid>
+            {products.map((product, index) => (
+              <Grid.Col key={index} span={3}>
+                <Paper shadow="sm" p="md" className={styles.productCard}>
+                  <img src={product.image} alt={`Product ${index + 1}`} className={styles.image} />
+                  <Text mt="md" className={styles.description}>
+                    {product.description}
+                  </Text>
+                </Paper>
+              </Grid.Col>
+            ))}
+          </Grid>
+        </Container>
+      </AppShell.Main>
+      <AppShell.Section>
         <div className={styles.divider}></div>
-        <Footer/>
+        <Footer />
       </AppShell.Section>
     </AppShell>
   );

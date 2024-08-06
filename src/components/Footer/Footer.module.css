@@ -5,7 +5,7 @@
 }
 
 .link {
-    color: #000;
+  color: #000;
   font-weight: bold;
   text-decoration: none;
 
@@ -21,3 +21,16 @@
     color: #007bff;
   }
 }
+
+.contact {
+  color: #808080;
+
+  &:hover {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+html {
+    scroll-behavior: smooth;
+  }

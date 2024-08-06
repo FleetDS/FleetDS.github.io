@@ -4,8 +4,10 @@ import { Header } from '../components/Header/Header';
 import { ContactForm } from '../components/ContactForm/ContactForm';
 import styles from './ContactPage.module.css';
 import Footer from '@/components/Footer/Footer';
+import useScrollToTop from '@/hooks/useScrolltoTop';
 
 export function ContactPage() {
+  useScrollToTop();
   const theme = useMantineTheme();
   const contactInfo = {
     email: 'client@fleetds.com',
@@ -19,7 +21,7 @@ export function ContactPage() {
         <Header />
       </AppShell.Header>
       <AppShell.Main>
-        <div className={styles.container}>
+        <div id="top" className={styles.container}>
           <Title order={3} className={styles.header}>
             Contact Us
           </Title>
