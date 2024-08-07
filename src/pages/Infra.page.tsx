@@ -40,7 +40,7 @@ export function InfraPage() {
       <AppShell.Main>
         <Container>
           <Title order={1} className={styles.header}>
-            Our Infrastructure Systems
+            Infrastructure Systems
           </Title>
           <Grid>
             {productLines.map((product, index) => (

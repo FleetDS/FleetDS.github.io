@@ -11,13 +11,55 @@
   border-radius: 8px;
   background-color: #f9f9f9;
   height: 660px;
-  max-width: 400;
+  max-width: 419px;
   margin-bottom: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.imageContainer:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
 }
 
 .image {
-  max-width: 100%;
+  height: auto;
   border-radius: 4px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(128, 128, 128, 0.6); /* Gray overlay with transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.learnMore {
+  color: white; /* White text color for link */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 2px solid white; /* White border for outline effect */
+  border-radius: 4px; /* Match border radius */
+  background-color: transparent;
+}
+
+.learnMore:hover {
+  text-decoration: none;
 }
 
 .title {

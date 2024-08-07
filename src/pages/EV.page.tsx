@@ -40,7 +40,7 @@ export function EVPage() {
       <AppShell.Main>
         <Container>
           <Title order={1} className={styles.header}>
-            Our Electric Vehicle Systems
+            Electric Vehicle Systems
           </Title>
           <Grid>
             {productLines.map((product, index) => (

@@ -40,7 +40,7 @@ export function FuelPage() {
       <AppShell.Main>
         <Container>
           <Title order={1} className={styles.header}>
-            Our Fuel Management Systems
+            Fuel Management Systems
           </Title>
           <Grid>
             {productLines.map((product, index) => (

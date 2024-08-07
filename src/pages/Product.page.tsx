@@ -21,13 +21,15 @@ const categories = [
   {
     image: electric,
     title: 'Electric Vehicle',
-    description: 'Explore our Electric Vehicle category, where we provide specialized tools for managing and optimizing electric vehicle operations. Our EV Controller ensures seamless and efficient charging, while our Fleet Management Software helps you track performance, manage charging schedules, and enhance overall fleet efficiency. Perfect for transitioning to greener technologies and optimizing your EV fleet.',
+    description:
+      'Explore our Electric Vehicle category, where we provide specialized tools for managing and optimizing electric vehicle operations. Our EV Controller ensures seamless and efficient charging, while our Fleet Management Software helps you track performance, manage charging schedules, and enhance overall fleet efficiency. Perfect for transitioning to greener technologies and optimizing your EV fleet.',
     link: '#/products/ev',
   },
   {
     image: gate,
     title: 'Infrastructure',
-    description: 'The Infrastructure category offers essential solutions for automating and managing key operational aspects of your facilities. With products like our Car Wash Controller, you can efficiently handle car wash operations, while the Gate Controller provides secure and automated management of entry and exit points. These systems are designed to enhance the functionality and security of your infrastructure.',
+    description:
+      'The Infrastructure category offers essential solutions for automating and managing key operational aspects of your facilities. With products like our Car Wash Controller, you can efficiently handle car wash operations, while the Gate Controller provides secure and automated management of entry and exit points. These systems are designed to enhance the functionality and security of your infrastructure.',
     link: '#/products/infra',
   },
 ];
@@ -52,13 +54,20 @@ export function ProductPage() {
               <Grid.Col key={index} span={{ base: 12, xs: 12, sm: 6, md: 4, lg: 4 }}>
                 <Paper shadow="sm" p="md" className={styles.categoryCard}>
                   <Anchor href={category.link}>
-                    <Image
-                      src={category.image}
-                      className={styles.image}
-                      h={290}
-                      w={387}
-                      fit="cover"
-                    />
+                    <div className={styles.imageContainer}>
+                      <Image
+                        src={category.image}
+                        className={styles.image}
+                        h={290}
+                        w={387}
+                        fit="cover"
+                      />
+                      <div className={styles.overlay}>
+                        <Anchor href={category.link} className={styles.learnMore}>
+                          Learn More
+                        </Anchor>
+                      </div>
+                    </div>
                   </Anchor>
                   <Text mt="md" className={styles.title}>
                     {category.title}
