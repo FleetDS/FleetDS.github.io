@@ -10,32 +10,36 @@ import banner2 from '../../assets/banner2.webp';
 import banner3 from '../../assets/banner2.jpg';
 import banner4 from '../../assets/banner3.jpg';
 import banner5 from '../../assets/AFS.jpg';
+import fleet from '../../assets/out-2.webp'
+import tech from '../../assets/tech.webp'
+import mobile from '../../assets/mobile.webp'
+import safety from '../../assets/safety.webp'
 
 const data = [
   {
-    image: banner2,
+    image: fleet,
     title: 'Streamline Your Fleet Operations',
     category: 'nature',
   },
   {
-    image: banner1,
+    image: safety,
     title: 'Safety First',
     category: 'beach',
   },
   {
-    image: banner4,
+    image: tech,
     title: 'Leverage Advanced Technology',
     category: 'nature',
   },
   {
-    image: banner5,
+    image: mobile,
     title: 'Manage Mobile Refueling',
     category: 'tourism',
   },
   {
     image:
     banner3,
-    title: 'Exceptional Support',
+    title: 'Exceptional Customer Support',
     category: 'nature',
   },
 ];

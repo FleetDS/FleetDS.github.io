@@ -5,7 +5,7 @@ import styles from './Services.module.css';
 import fueling from '../../assets/services/gas-station.png';
 import mobile from '../../assets/services/mtanker3.png';
 import monitor from '../../assets/services/fuelmonitor7b.png';
-import software from '../../assets/services/creativity2.png';
+import software from '../../assets/services/software.webp';
 import carwash from '../../assets/services/out-0.webp';
 import gate from '../../assets/services/out-1.webp';
 import { useEffect, useRef } from 'react';
