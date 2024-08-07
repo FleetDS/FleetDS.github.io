@@ -63,7 +63,6 @@ export function ContactForm() {
             <Grid.Col span={6}>
               <TextInput
                 label="First Name"
-                placeholder="John"
                 {...form.getInputProps('firstName')}
                 required
                 size="md"
@@ -72,7 +71,6 @@ export function ContactForm() {
             <Grid.Col span={6}>
               <TextInput
                 label="Last Name"
-                placeholder="Doe"
                 {...form.getInputProps('lastName')}
                 required
                 size="md"
@@ -81,21 +79,18 @@ export function ContactForm() {
           </Grid>
           <TextInput
             label="Company"
-            placeholder="Company Inc."
             {...form.getInputProps('company')}
             required
             size="md"
           />
           <TextInput
             label="Phone Number"
-            placeholder="1234567890"
             {...form.getInputProps('phone')}
             required
             size="md"
           />
           <TextInput
             label="Email"
-            placeholder="you@example.com"
             {...form.getInputProps('email')}
             required
             error={form.errors.email}
