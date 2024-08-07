@@ -9,6 +9,7 @@ import { useScrollHide } from '@/hooks/useScrollHide';
 import fuel from '../assets/products/IMG_0397.jpg';
 import electric from '../assets/products/electric.webp';
 import gate from '../assets/products/IMG_7657.jpg';
+import ContactButton from '@/components/ContactButton/ContactButton';
 
 const categories = [
   {
@@ -45,7 +46,7 @@ export function ProductPage() {
       </AppShell.Header>
 
       <AppShell.Main>
-        <Container id="top" size="xl">
+        <Container id="top" size="xl" className={styles.container}>
           <Title order={1} className={styles.header}>
             Fleet & Commercial Fueling Products
           </Title>
@@ -81,6 +82,7 @@ export function ProductPage() {
               </Grid.Col>
             ))}
           </Grid>
+          <ContactButton/>
         </Container>
       </AppShell.Main>
       <AppShell.Section>

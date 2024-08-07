@@ -5,6 +5,7 @@ import { Header } from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import useScrollToTop from '@/hooks/useScrolltoTop';
 import { useScrollHide } from '@/hooks/useScrollHide';
+import ContactButton from '@/components/ContactButton/ContactButton';
 
 const productLines = [
   {
@@ -38,7 +39,7 @@ export function FuelPage() {
       </AppShell.Header>
 
       <AppShell.Main>
-        <Container>
+        <Container className={styles.container}>
           <Title order={1} className={styles.header}>
             Fuel Management Systems
           </Title>
@@ -62,6 +63,7 @@ export function FuelPage() {
               </Grid.Col>
             ))}
           </Grid>
+          <ContactButton/>
         </Container>
       </AppShell.Main>
       <AppShell.Section>
