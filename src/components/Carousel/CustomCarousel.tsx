@@ -10,7 +10,7 @@ import banner2 from '../../assets/banner2.webp';
 import banner3 from '../../assets/banner2.jpg';
 import banner4 from '../../assets/banner3.jpg';
 import banner5 from '../../assets/AFS.jpg';
-import fleet from '../../assets/out-2.webp'
+import fleet from '../../assets/out-2.png'
 import tech from '../../assets/tech.webp'
 import mobile from '../../assets/mobile.webp'
 import safety from '../../assets/safety.webp'
