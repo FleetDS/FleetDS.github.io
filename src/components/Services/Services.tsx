@@ -6,6 +6,8 @@ import fueling from '../../assets/services/gas-station.png';
 import mobile from '../../assets/services/mtanker3.png';
 import monitor from '../../assets/services/fuelmonitor7b.png';
 import software from '../../assets/services/creativity2.png';
+import carwash from '../../assets/services/out-0.webp';
+import gate from '../../assets/services/out-1.webp';
 import { useEffect, useRef } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
 
@@ -31,12 +33,12 @@ const data = [
     des: 'We develop custom Fleet Management Software tailored to interface with various fleet systems, providing comprehensive solutions for fleet tracking and management.',
   },
   {
-    image: monitor,
+    image: gate,
     title: 'Gate Installation',
     des: 'Our Gate Installation service includes the setup of advanced access control systems to enhance security and manage entry to your facilities efficiently.',
   },
   {
-    image: software,
+    image: carwash,
     title: 'Carwash Installation',
     des: 'We specialize in installing carwash systems and integrating them with custom software solutions for efficient operation and management of your carwash services.',
   },
