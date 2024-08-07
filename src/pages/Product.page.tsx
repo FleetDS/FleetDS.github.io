@@ -1,28 +1,33 @@
 import React from 'react';
-import { Title, Paper, Text, Container, Grid, Anchor, AppShell } from '@mantine/core';
+import { Title, Paper, Text, Container, Grid, Anchor, AppShell, Image } from '@mantine/core';
 import styles from './ProductPage.module.css';
 import { Header } from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import useScrollToTop from '@/hooks/useScrolltoTop';
 import { useScrollHide } from '@/hooks/useScrollHide';
 
+import fuel from '../assets/products/IMG_0397.jpg';
+import electric from '../assets/products/electric.webp';
+import gate from '../assets/products/IMG_7657.jpg';
+
 const categories = [
   {
-    image: 'https://via.placeholder.com/200',
+    image: fuel,
     title: 'Fuel Management',
-    description: 'Category 1 description. Learn more about our Category 1 products.',
+    description:
+      'Our Fuel Management category includes cutting-edge solutions designed to streamline and optimize fuel dispensing and tracking. Whether you need a sophisticated Fuel Island Controller for managing your fueling stations, Handsfree Fueling systems for enhanced convenience, Mobile Refueling solutions for flexibility, or comprehensive Fleet Management Software for overseeing your entire operation, our products offer unmatched reliability and efficiency.',
     link: '#/products/fuel',
   },
   {
-    image: 'https://via.placeholder.com/200',
+    image: electric,
     title: 'Electric Vehicle',
-    description: 'Category 2 description. Learn more about our Category 2 products.',
+    description: 'Explore our Electric Vehicle category, where we provide specialized tools for managing and optimizing electric vehicle operations. Our EV Controller ensures seamless and efficient charging, while our Fleet Management Software helps you track performance, manage charging schedules, and enhance overall fleet efficiency. Perfect for transitioning to greener technologies and optimizing your EV fleet.',
     link: '#/products/ev',
   },
   {
-    image: 'https://via.placeholder.com/200',
+    image: gate,
     title: 'Infrastructure',
-    description: 'Category 3 description. Learn more about our Category 3 products.',
+    description: 'The Infrastructure category offers essential solutions for automating and managing key operational aspects of your facilities. With products like our Car Wash Controller, you can efficiently handle car wash operations, while the Gate Controller provides secure and automated management of entry and exit points. These systems are designed to enhance the functionality and security of your infrastructure.',
     link: '#/products/infra',
   },
 ];
@@ -30,7 +35,7 @@ const categories = [
 export function ProductPage() {
   useScrollToTop();
   const showHeader = useScrollHide();
-  
+
   return (
     <AppShell header={{ height: 70, collapsed: !showHeader }}>
       <AppShell.Header>
@@ -44,10 +49,16 @@ export function ProductPage() {
           </Title>
           <Grid>
             {categories.map((category, index) => (
-              <Grid.Col key={index} span={{ base: 12, xs: 12, sm: 4, md: 4, lg: 4 }}>
+              <Grid.Col key={index} span={{ base: 12, xs: 12, sm: 6, md: 4, lg: 4 }}>
                 <Paper shadow="sm" p="md" className={styles.categoryCard}>
                   <Anchor href={category.link}>
-                    <img src={category.image} alt={`Category ${index + 1}`} className={styles.image} />
+                    <Image
+                      src={category.image}
+                      className={styles.image}
+                      h={290}
+                      w={387}
+                      fit="cover"
+                    />
                   </Anchor>
                   <Text mt="md" className={styles.title}>
                     {category.title}
