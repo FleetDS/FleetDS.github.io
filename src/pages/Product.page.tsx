@@ -59,7 +59,6 @@ export function ProductPage() {
                         src={category.image}
                         className={styles.image}
                         h={290}
-                        w={387}
                         fit="cover"
                       />
                       <div className={styles.overlay}>
