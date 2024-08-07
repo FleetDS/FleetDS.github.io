@@ -9,16 +9,19 @@ import { useScrollHide } from '@/hooks/useScrollHide';
 const categories = [
   {
     image: 'https://via.placeholder.com/200',
+    title: 'Fuel Management',
     description: 'Category 1 description. Learn more about our Category 1 products.',
     link: '#/products/fuel',
   },
   {
     image: 'https://via.placeholder.com/200',
+    title: 'Electric Vehicle',
     description: 'Category 2 description. Learn more about our Category 2 products.',
     link: '#/products/ev',
   },
   {
     image: 'https://via.placeholder.com/200',
+    title: 'Infrastructure',
     description: 'Category 3 description. Learn more about our Category 3 products.',
     link: '#/products/infra',
   },
@@ -46,6 +49,9 @@ export function ProductPage() {
                   <Anchor href={category.link}>
                     <img src={category.image} alt={`Category ${index + 1}`} className={styles.image} />
                   </Anchor>
+                  <Text mt="md" className={styles.title}>
+                    {category.title}
+                  </Text>
                   <Text mt="md" className={styles.description}>
                     {category.description}
                   </Text>
