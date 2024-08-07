@@ -4,22 +4,24 @@
 }
 
 .categoryCard {
+  display: flex;
+  flex-direction: column;
   text-align: left;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
   padding: 1rem;
   border-radius: 8px;
   background-color: #f9f9f9;
+  height: 660px;
+  max-width: 400;
+  margin-bottom: auto;
 }
 
 .image {
   max-width: 100%;
-  height: auto;
   border-radius: 4px;
 }
 
 .title {
+  align-items: center;
   font-weight: bold;
   margin-top: 1rem;
 }
@@ -30,7 +32,7 @@
 
 .learnMoreLink {
   display: block;
-  margin-top: 1rem;
+  margin-top: auto;
   color: #007bff;
   text-decoration: none;
 }
