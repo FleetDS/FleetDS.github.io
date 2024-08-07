@@ -9,22 +9,14 @@ import ContactButton from '@/components/ContactButton/ContactButton';
 
 const productLines = [
   {
-    title: 'Fuel Monitoring Systems',
-    description: 'Advanced solutions for real-time fuel monitoring and management.',
+    title: 'Car Wash Controller',
+    description: 'Automate and manage your car wash operations with our Car Wash Controller. It offers intuitive control over wash cycles, payment processing, and customer interactions, ensuring a smooth and efficient car wash experience.',
     image: 'https://via.placeholder.com/300',
-    link: '/fuel-monitoring',
   },
   {
-    title: 'Fleet Tracking Solutions',
-    description: 'Comprehensive tracking solutions for managing your fleet efficiently.',
+    title: 'Gate Controller',
+    description: 'Secure and streamline access with our Gate Controller. It provides automated control of entry and exit points, integrates with various security systems, and offers real-time monitoring and management capabilities.',
     image: 'https://via.placeholder.com/300',
-    link: '/fleet-tracking',
-  },
-  {
-    title: 'Analytics and Reporting',
-    description: 'Detailed analytics and reporting tools to optimize fuel usage and costs.',
-    image: 'https://via.placeholder.com/300',
-    link: '/analytics-reporting',
   },
 ];
 
@@ -47,23 +39,18 @@ export function InfraPage() {
             {productLines.map((product, index) => (
               <Grid.Col key={index} span={4}>
                 <Paper shadow="sm" className={styles.productCard}>
-                  <a href={product.link}>
-                    <img src={product.image} alt={product.title} className={styles.image} />
-                  </a>
+                  <img src={product.image} alt={product.title} className={styles.image} />
                   <Text mt="md" className={styles.title}>
                     {product.title}
                   </Text>
                   <Text mt="md" className={styles.description}>
                     {product.description}
                   </Text>
-                  <Anchor href={product.link} className={styles.learnMoreLink}>
-                    Learn More
-                  </Anchor>
                 </Paper>
               </Grid.Col>
             ))}
           </Grid>
-          <ContactButton/>
+          <ContactButton />
         </Container>
       </AppShell.Main>
       <AppShell.Section>

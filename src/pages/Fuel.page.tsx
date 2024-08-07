@@ -9,22 +9,28 @@ import ContactButton from '@/components/ContactButton/ContactButton';
 
 const productLines = [
   {
-    title: 'Fuel Monitoring Systems',
-    description: 'Advanced solutions for real-time fuel monitoring and management.',
+    title: 'Fuel Island Controller',
+    description:
+      'Streamline your fuel dispensing operations with our advanced Fuel Island Controller. It offers real-time monitoring, and full weatherproofing. Perfect for any fuel island',
     image: 'https://via.placeholder.com/300',
-    link: '/fuel-monitoring',
   },
   {
-    title: 'Fleet Tracking Solutions',
-    description: 'Comprehensive tracking solutions for managing your fleet efficiently.',
+    title: 'Handsfree Fueling',
+    description:
+      'Enhance convenience and safety with our Handsfree Fueling solution. Designed to reduce manual interaction, this system allows for automated fueling with minimal effort, ideal for speed and convenience',
     image: 'https://via.placeholder.com/300',
-    link: '/fleet-tracking',
   },
   {
-    title: 'Analytics and Reporting',
-    description: 'Detailed analytics and reporting tools to optimize fuel usage and costs.',
+    title: 'Mobile Refueling',
+    description:
+      'Our Mobile Refueling system offers flexibility and efficiency for on-the-go fueling needs. Perfect for fleets and remote sites.',
     image: 'https://via.placeholder.com/300',
-    link: '/analytics-reporting',
+  },
+  {
+    title: 'Fleet Management Software',
+    description:
+      'Optimize your fleet operations with our comprehensive Fleet Management Software. It provides real-time data, fuel tracking, maintenance alerts, and reporting tools to help you manage and reduce costs effectively.',
+    image: 'https://via.placeholder.com/300',
   },
 ];
 
@@ -47,23 +53,18 @@ export function FuelPage() {
             {productLines.map((product, index) => (
               <Grid.Col key={index} span={4}>
                 <Paper shadow="sm" className={styles.productCard}>
-                  <a href={product.link}>
-                    <img src={product.image} alt={product.title} className={styles.image} />
-                  </a>
+                  <img src={product.image} alt={product.title} className={styles.image} />
                   <Text mt="md" className={styles.title}>
                     {product.title}
                   </Text>
                   <Text mt="md" className={styles.description}>
                     {product.description}
                   </Text>
-                  <Anchor href={product.link} className={styles.learnMoreLink}>
-                    Learn More
-                  </Anchor>
                 </Paper>
               </Grid.Col>
             ))}
           </Grid>
-          <ContactButton/>
+          <ContactButton />
         </Container>
       </AppShell.Main>
       <AppShell.Section>
