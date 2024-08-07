@@ -9,6 +9,7 @@ import { useScrollHide } from '@/hooks/useScrollHide';
 
 export function ContactPage() {
   useScrollToTop();
+  const showHeader = useScrollHide();
   const theme = useMantineTheme();
   const contactInfo = {
     email: 'client@fleetds.com',
@@ -17,7 +18,7 @@ export function ContactPage() {
   };
 
   return (
-    <AppShell header={{ height: 70 }}>
+    <AppShell header={{ height: 70, collapsed: !showHeader }}>
       <AppShell.Header>
         <Header />
       </AppShell.Header>

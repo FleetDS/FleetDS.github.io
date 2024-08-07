@@ -4,6 +4,7 @@ import styles from './ProductPage.module.css';
 import { Header } from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import useScrollToTop from '@/hooks/useScrolltoTop';
+import { useScrollHide } from '@/hooks/useScrollHide';
 
 const products = [
   {
@@ -26,8 +27,9 @@ const products = [
 
 export function ProductPage() {
   useScrollToTop();
+  const showHeader = useScrollHide();
   return (
-    <AppShell header={{ height: 70 }}>
+    <AppShell header={{ height: 70, collapsed: !showHeader }}>
       <AppShell.Header>
         <Header />
       </AppShell.Header>
