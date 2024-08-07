@@ -5,15 +5,15 @@ import classes from './CustomCarousel.module.css';
 import { useRef } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
 
-import banner1 from '../../assets/banner12to1.jpg';
-import banner2 from '../../assets/banner2.webp';
-import banner3 from '../../assets/banner2.jpg';
-import banner4 from '../../assets/banner3.jpg';
-import banner5 from '../../assets/AFS.jpg';
-import fleet from '../../assets/out-2.png'
-import tech from '../../assets/tech.webp'
-import mobile from '../../assets/mobile.webp'
-import safety from '../../assets/safety.webp'
+import banner1 from '../../assets/home/banner12to1.jpg';
+import banner2 from '../../assets/home/banner2.webp';
+import banner3 from '../../assets/home/banner2.jpg';
+import banner4 from '../../assets/home/banner3.jpg';
+import banner5 from '../../assets/home/AFS.jpg';
+import fleet from '../../assets/home/out-2.png'
+import tech from '../../assets/home/tech.webp'
+import mobile from '../../assets/home/mobile.webp'
+import safety from '../../assets/home/safety.webp'
 
 const data = [
   {

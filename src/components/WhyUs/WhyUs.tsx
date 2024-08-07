@@ -2,10 +2,10 @@ import React from 'react';
 import { Container, Title, Text, Grid, Card, Flex, Image } from '@mantine/core';
 import styles from './WhyUs.module.css';
 
-import reliable from '../../assets/reliability2f.jpg';
-import exceptional from '../../assets/exceptional.png';
-import support from '../../assets/support2.png';
-import ray from '../../assets/Rayfeaturee.jpg';
+import reliable from '../../assets/home/reliability2f.jpg';
+import exceptional from '../../assets/home/exceptional.png';
+import support from '../../assets/home/support2.png';
+import ray from '../../assets/home/Rayfeaturee.jpg';
 
 const WhyUs: React.FC = () => {
   return (
