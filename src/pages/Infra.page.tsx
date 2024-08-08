@@ -7,13 +7,14 @@ import useScrollToTop from '@/hooks/useScrolltoTop';
 import { useScrollHide } from '@/hooks/useScrollHide';
 import ContactButton from '@/components/ContactButton/ContactButton';
 
-import gate from '../assets/infra/IMG_6315.jpg';
+import wash from '../assets/infra/IMG_6315.jpg';
+import gate from '../assets/infra/IMG_7669.jpg';
 
 const productLines = [
   {
     title: 'Car Wash Controller',
     description: 'Automate and manage your car wash operations with our Car Wash Controller. It offers intuitive control over wash cycles, payment processing, and customer interactions, ensuring a smooth and efficient car wash experience.',
-    image: gate,
+    image: wash,
   },
   {
     title: 'Gate Controller',
