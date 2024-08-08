@@ -27,7 +27,7 @@ const WhyUs: React.FC = () => {
                 wrap="nowrap"
               >
                 <Image radius="md" src={reliable} w={50} h={50} />
-                <Text mt="md" ta="left" color="dimmed">
+                <Text mt="md" ta="left" color="dimmed" className={styles.text}>
                   Our Fleet Management Systems boast exceptional reliability, with a Mean Time To
                   Failure (MTTF) exceeding 40,000 hours. Designed for continuous operation, our
                   systems ensure seamless performance 24/7, 365 days a year. We offer top-tier
@@ -50,7 +50,7 @@ const WhyUs: React.FC = () => {
                 wrap="nowrap"
               >
                 <Image radius="md" src={exceptional} w={50} h={50} />
-                <Text mt="md" ta="left" color="dimmed">
+                <Text mt="md" ta="left" color="dimmed" className={styles.text}>
                   FDS delivers comprehensive, integrated solutions for the entire fuel management
                   process. Combining cutting-edge hardware with advanced software, we offer
                   cost-effective, customized solutions that optimize your operations and meet your
@@ -73,7 +73,7 @@ const WhyUs: React.FC = () => {
                 wrap="nowrap"
               >
                 <Image radius="md" src={support} w={50} h={50} />
-                <Text mt="md" ta="left" color="dimmed">
+                <Text mt="md" ta="left" color="dimmed" className={styles.text}>
                   With over 25 years of expertise in fleet management, our team at Fleet Data
                   Systems (FDS) is dedicated to providing top-notch support. Our experienced
                   professionals are adept at addressing your needs swiftly and effectively, ensuring
@@ -96,7 +96,7 @@ const WhyUs: React.FC = () => {
                 wrap="nowrap"
               >
                 <Image radius="md" src={gear} w={50} h={50} />
-                <Text mt="md" ta="left" color="dimmed">
+                <Text mt="md" ta="left" color="dimmed" className={styles.text}>
                   Our custom solutions are built with flexibility and scalability in mind, allowing
                   you to adapt to changing demands and future growth. With over 25 years of
                   experience in fleet management, we leverage our deep industry knowledge to deliver

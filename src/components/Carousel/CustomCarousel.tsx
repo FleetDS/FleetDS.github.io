@@ -52,7 +52,7 @@ interface CardProps {
 
 function Card({ image, title, category }: CardProps) {
   return (
-    <Paper shadow="md" p="xl" style={{ backgroundImage: `url(${image})` }} className={classes.card}>
+    <Paper shadow="md" p="xl" radius="0px" style={{ backgroundImage: `url(${image})` }} className={classes.card}>
       <div>
         <Title order={3} className={classes.title}>
           {title}

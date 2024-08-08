@@ -18,9 +18,9 @@
   padding: 1rem;
   border-radius: 8px;
   background-color: #f9f9f9;
-  height: 660px;
+  height: 600px;
   max-width: 419px;
-  margin-bottom: auto;
+  margin-bottom: 1rem;
   position: relative;
   overflow: hidden;
 }
@@ -74,10 +74,12 @@
   align-items: center;
   font-weight: bold;
   margin-top: 1rem;
+  font-size: 1.5rem;
 }
 
 .description {
   margin: 1rem 0;
+  font-size: 0.85rem;
 }
 
 .learnMoreLink {

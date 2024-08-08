@@ -5,6 +5,9 @@
   height: 70px;
   padding: 0 1rem;
   box-sizing: border-box;
+  background: linear-gradient(150deg, #007AFF 0%, #0056b3 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15); /* Subtle border for separation */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -29,7 +32,7 @@
 
 .navLink {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   text-align: end;
   transition:
     background-color 0.3s ease,
@@ -38,7 +41,7 @@
 }
 
 .navLink:hover {
-  color: #d9d9d9;
+  color: #bfbfbf;
 }
 
 .burger {
@@ -76,6 +79,7 @@
     border-radius: 0.5rem;
     background-color: rgba(256, 256, 256, 0.3);
     padding: 0.7rem 1rem;
+    
   }
 
   .navVisible {

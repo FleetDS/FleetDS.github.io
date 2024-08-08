@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, TextInput, Textarea, Paper, Title, Fieldset, Grid } from '@mantine/core';
 import { useForm } from '@mantine/form';
+import styles from './ContactForm.module.css'
 
 // Comprehensive email regex pattern
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -105,7 +106,7 @@ export function ContactForm() {
             minRows={6}
             size="md"
           />
-          <Button type="submit" fullWidth mt="md">
+          <Button type="submit" fullWidth mt="md" className={styles.button}>
             Send Message
           </Button>
         </Fieldset>

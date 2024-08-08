@@ -76,7 +76,7 @@ export function ProductPage() {
                     {category.description}
                   </Text>
                   <Anchor href={category.link} className={styles.learnMoreLink}>
-                    Learn More
+                    View {category.title}
                   </Anchor>
                 </Paper>
               </Grid.Col>

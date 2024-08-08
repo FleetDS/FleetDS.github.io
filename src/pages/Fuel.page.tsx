@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Paper, Text, Title, AppShell } from '@mantine/core';
+import { Container, Paper, Text, Title, AppShell, Image } from '@mantine/core';
 import styles from './FuelPage.module.css';
 import { Header } from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
@@ -10,7 +10,7 @@ import ContactButton from '@/components/ContactButton/ContactButton';
 import controller from '../assets/fuel/IMG_6342.png'
 import handsfree from '../assets/fuel/IMG_1614.jpg'
 import mobile from '../assets/fuel/IMG_1993.jpg'
-import software from '../assets/fuel/out-3.webp'
+import software from '../assets/fuel/out-3.jpg'
 
 const productLines = [
   {
@@ -69,7 +69,7 @@ export function FuelPage() {
                 </Text>
               </div>
               <div className={styles.imageSection}>
-                <img src={product.image} alt={product.title} className={styles.image} />
+                <Image src={product.image} h={300} fit="contain" className={styles.image} />
               </div>
             </Paper>
           ))}
