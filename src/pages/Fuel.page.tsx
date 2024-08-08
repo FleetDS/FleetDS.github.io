@@ -16,13 +16,13 @@ const productLines = [
   {
     title: 'Fuel Island Controller',
     description:
-      'Streamline your fuel dispensing operations with our advanced Fuel Island Controller. It offers real-time monitoring, and full weatherproofing. Perfect for any fuel island',
+      'Streamline your fuel dispensing operations with our advanced Fuel Island Controller. It offers real-time monitoring, and full weatherproofing. Perfect for any fuel island.',
     image: controller,
   },
   {
     title: 'Handsfree Fueling',
     description:
-      'Enhance convenience and safety with our Handsfree Fueling solution. Designed to reduce manual interaction, this system allows for automated fueling with minimal effort, ideal for speed and convenience',
+      'Enhance convenience and safety with our Handsfree Fueling solution. Designed to reduce manual interaction, this system allows for automated fueling with minimal effort, ideal for speed and convenience.',
     image: handsfree,
   },
   {

@@ -1,6 +1,8 @@
 .productCard {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
   margin-bottom: 2rem; /* Space between product cards */
   border-radius: 8px;
