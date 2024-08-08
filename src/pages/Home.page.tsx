@@ -25,7 +25,7 @@ export function HomePage() {
     service: useRef<HTMLDivElement>(null),
     whyus: useRef<HTMLDivElement>(null),
   };
-  
+
   return (
     <AppShell
       header={{ height: 70, collapsed: !showHeader }}
@@ -41,18 +41,24 @@ export function HomePage() {
 
       <AppShell.Main>
         <div ref={sectionRefs.home}>
-          <div id="service" ref={sectionRefs.service} className={styles.section}>
-            <CustomCarousel />
-            <Text className={styles.header} fw={500}>
-              Services
-            </Text>
-            <Services />
+          <div className={styles.carouselContainer}>
+            <div id="carousel" ref={sectionRefs.carousel} className={styles.carousel}>
+              <CustomCarousel />
+            </div>
           </div>
-          <div id="whyus" ref={sectionRefs.whyus} className={styles.section}>
-            <Text className={styles.header} fw={500}>
-              Why Us?
-            </Text>
-            <WhyUs />
+          <div className={styles.content}>
+            <div id="service" ref={sectionRefs.service} className={styles.section}>
+              <Text className={styles.header} fw={500}>
+                Services
+              </Text>
+              <Services />
+            </div>
+            <div id="whyus" ref={sectionRefs.whyus} className={styles.WhyUsSection}>
+              <Text className={styles.header} fw={500}>
+                Why Us?
+              </Text>
+              <WhyUs />
+            </div>
           </div>
         </div>
       </AppShell.Main>

@@ -1,45 +1,66 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.header {
-  text-align: center;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
-}
-
 .productCard {
-  text-align: center;
-  padding: 1rem;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-}
-
-.image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
-}
-
-.title {
-  font-weight: bold;
-  margin-top: 1rem;
-}
-
-.description {
-  margin-top: 0.5rem;
-}
-
-.learnMoreLink {
-  display: block;
-  margin-top: 1rem;
-  color: #007bff;
-  text-decoration: none;
-}
-
-.learnMoreLink:hover {
-  text-decoration: underline;
-}
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    margin-bottom: 2rem; /* Space between product cards */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+  }
+  
+  .textSection {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .imageSection {
+    flex: 1;
+  }
+  
+  .image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .leftText .textSection {
+    order: 1;
+  }
+  
+  .leftText .imageSection {
+    order: 2;
+  }
+  
+  .rightText .textSection {
+    order: 2;
+  }
+  
+  .rightText .imageSection {
+    order: 1;
+  }
+  
+  .title {
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .description {
+    margin: 1rem 0;
+  }
+  
+  .contactSection {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .header {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .divider {
+    height: 1px;
+    background-color: #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  

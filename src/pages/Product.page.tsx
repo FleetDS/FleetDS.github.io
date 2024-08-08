@@ -19,13 +19,13 @@ const categories = [
       'Our Fuel Management category includes cutting-edge solutions designed to streamline and optimize fuel dispensing and tracking. Whether you need a sophisticated Fuel Island Controller for managing your fueling stations, Handsfree Fueling systems for enhanced convenience, Mobile Refueling solutions for flexibility, or comprehensive Fleet Management Software for overseeing your entire operation, our products offer unmatched reliability and efficiency.',
     link: '#/products/fuel',
   },
-  {
-    image: electric,
-    title: 'Electric Vehicle',
-    description:
-      'Explore our Electric Vehicle category, where we provide specialized tools for managing and optimizing electric vehicle operations. Our EV Controller ensures seamless and efficient charging, while our Fleet Management Software helps you track performance, manage charging schedules, and enhance overall fleet efficiency. Perfect for transitioning to greener technologies and optimizing your EV fleet.',
-    link: '#/products/ev',
-  },
+  // {
+  //   image: electric,
+  //   title: 'Electric Vehicle',
+  //   description:
+  //     'Explore our Electric Vehicle category, where we provide specialized tools for managing and optimizing electric vehicle operations. Our EV Controller ensures seamless and efficient charging, while our Fleet Management Software helps you track performance, manage charging schedules, and enhance overall fleet efficiency. Perfect for transitioning to greener technologies and optimizing your EV fleet.',
+  //   link: '#/products/ev',
+  // },
   {
     image: gate,
     title: 'Infrastructure',
@@ -52,7 +52,7 @@ export function ProductPage() {
           </Title>
           <Grid>
             {categories.map((category, index) => (
-              <Grid.Col key={index} span={{ base: 12, xs: 12, sm: 6, md: 4, lg: 4 }}>
+              <Grid.Col key={index} span={{ base: 12, xs: 12, sm: 6, md: 6, lg: 6 }}>
                 <Paper shadow="sm" p="md" className={styles.categoryCard}>
                   <Anchor href={category.link}>
                     <div className={styles.imageContainer}>

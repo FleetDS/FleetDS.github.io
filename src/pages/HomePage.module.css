@@ -6,10 +6,31 @@
 }
 
 .section {
-  margin-bottom: 5rem;
   flex: 1;
   justify-content: center;
   align-items: center;
+  background-color: rgb(255, 255, 255);
+  z-index: 2; /* Ensure it's above the carousel */
+}
+
+.carouselContainer {
+  position: relative;
+  width: 100%;
+}
+
+.carousel {
+  left: 0;
+  width: 100%;
+  height: 390px; /* Set the height according to your needs */
+  z-index: 0; /* Ensure it's below the other content but above the background */
+}
+
+.WhyUsSection{
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  background-color: rgb(255, 255, 255);
 }
 
 .header {

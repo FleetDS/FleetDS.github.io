@@ -8,7 +8,9 @@ export function Header() {
 
   return (
     <div className={styles.headerContainer}>
-      <Image h={50} w="auto" radius="md" src={logo} className={styles.logo} />
+      <Anchor href="#/" className={styles.logoLink}>
+        <Image h={50} w="auto" radius="md" src={logo} className={styles.logo} />
+      </Anchor>
       <Burger opened={opened} onClick={() => setOpened((o) => !o)} className={styles.burger} />
       <div className={`${styles.nav} ${opened ? styles.navVisible : styles.navHidden}`}>
         <Anchor href="/" className={styles.navLink} underline="never" fw={500} fz="lg">
