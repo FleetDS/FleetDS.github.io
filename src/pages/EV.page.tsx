@@ -27,7 +27,7 @@ export function EVPage() {
   const showHeader = useScrollHide();
 
   return (
-    <AppShell header={{ height: 70, collapsed: !showHeader }}>
+    <AppShell header={{ height: 90, collapsed: !showHeader }}>
       <AppShell.Header>
         <Header />
       </AppShell.Header>

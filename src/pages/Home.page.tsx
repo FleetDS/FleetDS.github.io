@@ -28,10 +28,10 @@ export function HomePage() {
 
   return (
     <AppShell
-      header={{ height: 70, collapsed: !showHeader }}
+      header={{ height: 90, collapsed: !showHeader }}
       styles={(theme) => ({
         main: {
-          paddingTop: 70, // Adjust for header height
+          paddingTop: 90, // Adjust for header height
         },
       })}
     >

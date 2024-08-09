@@ -18,7 +18,7 @@ export function ContactPage() {
   };
 
   return (
-    <AppShell header={{ height: 70, collapsed: !showHeader }}>
+    <AppShell header={{ height: 90, collapsed: !showHeader }}>
       <AppShell.Header>
         <Header />
       </AppShell.Header>
