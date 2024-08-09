@@ -5,7 +5,12 @@ const useScrollToTop = () => {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    const scrollToTop = () => {
+      window.scrollTo(0, 0);
+    };
+
+    // Wrap in requestAnimationFrame to ensure execution after DOM update
+    requestAnimationFrame(scrollToTop);
   }, [location]);
 };
 
