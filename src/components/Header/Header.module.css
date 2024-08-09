@@ -1,102 +1,71 @@
+/* Header.module.css */
+
+/* General header container styles */
 .headerContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 90px;
   padding: 0 1rem;
   box-sizing: border-box;
-  background: linear-gradient(150deg, #007AFF 0%, #0056b3 100%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15); /* Subtle border for separation */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(150deg, #007AFF, #0056b3);
+  height: 90px;
 }
 
-.logo {
+/* Style for the logo link */
+.logoLink {
   margin: 0;
 }
 
+/* Style for the logo image */
+.logo {
+  height: 70px;
+  width: auto;
+  border-radius: 8px;
+}
+
+/* Style for the navigation links container */
 .nav {
   display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  margin-right: 0;
-  transition: all 0.3s ease;
+  flex-direction: row; /* Default to horizontal layout */
+  align-items: center;
 }
 
-.navHidden {
-  display: flex;
-}
-
-.navVisible {
-  display: flex;
-}
-
+/* Style for individual nav links */
 .navLink {
-  text-decoration: none;
+  padding: 1rem;
   color: #fff;
-  text-align: end;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
-  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
-.navLink:hover {
-  color: #bfbfbf;
+/* Optional: Add some margin to separate links */
+.navLink:not(:last-child) {
+  margin-right: 1rem;
 }
 
-.burger {
-  display: none;
-  margin: 1em;
-}
-
+/* Mobile styles */
 @media (max-width: 768px) {
   .headerContainer {
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    margin-inline: 1rem;
   }
 
   .nav {
-    flex-direction: column;
-    position: absolute;
-    top: 80px;
-    right: 1em;
-    background-color: transparent;
-    transition:
-      opacity 0.3s ease,
-      transform 0.3s ease;
-    opacity: 0;
-    justify-content: flex-end;
+    flex-direction: row;
+    width: 100%;
+    margin-top: -0.75rem;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .navLink {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.8);
-    text-align: center;
-    transition:
-      background-color 0.3s ease,
-      color 0.3s ease;
-    border-radius: 0.5rem;
-    background-color: rgba(256, 256, 256, 0.3);
-    padding: 0.7rem 1rem;
-    
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
   }
-
-  .navVisible {
-    opacity: 1;
-    transform: translateY(0);
+  .logo {
+    height: 50px;
+    width: auto;
+    border-radius: 8px;
+    margin-top: 0.5rem;
   }
-
-  .navHidden {
-    display: none;
-  }
-
-  .burger {
-    display: block;
-  }
-}
-
-.logoLink:hover .logo {
-  filter: grayscale(100%);
-  transition: all 0.3s ease;
 }
