@@ -5,7 +5,7 @@ import styles from './ContactButton.module.css'; // Import your custom styles
 const ContactButton: React.FC = () => {
   return (
     <Anchor 
-      href="#/contact" 
+      href="#/contact#top" 
       className={styles.contactButton}
     >
       Contact Us
