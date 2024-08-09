@@ -1,7 +1,7 @@
 import { Burger, Image, Anchor } from '@mantine/core';
 import { useState } from 'react';
 import logo from '../../assets/home/fdslogo.png';
-import logo1 from '../../assets/out-1.jpg'
+import logo1 from '../../assets/out-3.jpg'
 import styles from './Header.module.css';
 
 export function Header() {
