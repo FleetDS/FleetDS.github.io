@@ -12,6 +12,7 @@ import Footer from '@/components/Footer/Footer';
 import useScrollToTop from '@/hooks/useScrolltoTop';
 import { useScrollHide } from '@/hooks/useScrollHide';
 import WhyUs from '@/components/WhyUs/WhyUs';
+import ContactButton from '@/components/ContactButton/ContactButton';
 
 interface SectionRefs {
   [key: string]: React.RefObject<HTMLDivElement>;
@@ -62,7 +63,11 @@ export function HomePage() {
           </div>
         </div>
       </AppShell.Main>
-
+      <AppShell.Section>
+        <div className={styles.contact}>
+          <ContactButton />
+        </div>
+      </AppShell.Section>
       <AppShell.Section>
         <div className={styles.divider}></div>
         <Footer />
