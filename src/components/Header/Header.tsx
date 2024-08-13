@@ -1,5 +1,5 @@
 import { Image, Anchor } from '@mantine/core';
-import logo1 from '../../assets/out-3.jpg';
+import logo1 from '../../assets/out-4.webp';
 import styles from './Header.module.css';
 
 export function Header() {

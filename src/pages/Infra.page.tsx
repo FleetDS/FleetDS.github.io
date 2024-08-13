@@ -7,7 +7,7 @@ import useScrollToTop from '@/hooks/useScrolltoTop';
 import { useScrollHide } from '@/hooks/useScrollHide';
 import ContactButton from '@/components/ContactButton/ContactButton';
 
-import wash from '../assets/infra/IMG_6315.jpg';
+import wash from '../assets/infra/thumbnail_IMG_5399.jpg';
 import gate from '../assets/infra/IMG_7669.jpg';
 
 const productLines = [
