@@ -42,8 +42,8 @@ const Footer: React.FC = () => {
             </Text>
             <Text size="sm">
               Email:{' '}
-              <Anchor href="mailto:client@fleetds.com" className={styles.contact}>
-                client@fleetds.com
+              <Anchor href="mailto:sales@fleetds.com" className={styles.contact}>
+              sales@fleetds.com
               </Anchor>
             </Text>
             <Text size="sm">

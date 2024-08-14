@@ -12,7 +12,7 @@ export function ContactPage() {
   const showHeader = useScrollHide();
   const theme = useMantineTheme();
   const contactInfo = {
-    email: 'client@fleetds.com',
+    email: 'sales@fleetds.com',
     address: '1650 S. Amphlett Blvd, Suite 108, San Mateo, California 94402',
     phone: 'Office: 650-618-4681',
   };
