@@ -6,8 +6,7 @@ import styles from './ContactForm.module.css'
 // Comprehensive email regex pattern
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-// Improved phone regex pattern (allows spaces, dashes, and parentheses)
-const phoneRegex = /^(\+?\d{1,4}[\s-])?(\(?\d{1,5}\)?[\s-])?\d{1,4}([\s-]\d{1,4}){1,2}$/;
+const phoneRegex = /^(\+?\d{1,4}[ \-\(\)]?)?(\d{1,5}[ \-\(\)]?)?\d{1,4}([ \-\(\)]?\d{1,4}){1,2}$/;
 
 export function ContactForm() {
   // Initialize form state and validation
